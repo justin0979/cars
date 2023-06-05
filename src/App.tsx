@@ -1,7 +1,12 @@
+import { CarForm, CarList, CarSearch, CarValue } from "./components";
+
 function App() {
   return (
     <div>
-      <h1>Cars App</h1>
+      <CarForm />
+      <CarList />
+      <CarSearch />
+      <CarValue />
     </div>
   );
 }
