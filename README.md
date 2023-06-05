@@ -1,1 +1,3 @@
-# Base Development Envrionment with React and Redux (using Typescript)
+# Cars App to Provide Car Name and Value
+
+Redux Store Design practice.
