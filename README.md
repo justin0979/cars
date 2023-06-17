@@ -53,8 +53,8 @@ Below is just one of many possible groupings:
 
 Below is just one of many possible groupings:
 
-| **Slice for adding cars** | **Slice for displaying car** |
-| :-----------------------: | :--------------------------: |
-|        changeName         |          changeTerm          |
-|        changeCost         |            addCar            |
-|                           |          removeCar           |
+| **Slice for adding cars (Form Slice)** | **Slice for displaying car (Cars Slice)** |
+| :------------------------------------: | :---------------------------------------: |
+|               changeName               |                changeTerm                 |
+|               changeCost               |                  addCar                   |
+|                                        |                 removeCar                 |
