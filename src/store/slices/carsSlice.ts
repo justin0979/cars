@@ -6,7 +6,7 @@ interface CarType {
   cost: number;
 }
 
-const carSlice = createSlice({
+const carsSlice = createSlice({
   name: "car",
   initialState: [] as CarType[],
   reducers: {
@@ -16,5 +16,5 @@ const carSlice = createSlice({
   },
 });
 
-export const { addCar } = carSlice.actions;
-export const carsReducer = carSlice.reducer;
+export const { addCar } = carsSlice.actions;
+export const carsReducer = carsSlice.reducer;
