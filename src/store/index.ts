@@ -4,7 +4,9 @@ import {
   changeName,
   changeCost,
   carsReducer,
+  changeSearchTerm,
   addCar,
+  removeCar,
 } from "./slices";
 
 const store = configureStore({
