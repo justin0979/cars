@@ -16,4 +16,4 @@ What state will be needed?
 What will derived state (values calculated using existing state) be?
 
 -   totalCost: number
--   matchedCars
+-   matchedCars: unknown
