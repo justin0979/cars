@@ -15,7 +15,7 @@ const carsSlice = createSlice({
   name: "car",
   initialState: {
     searchTerm: "",
-    cars: [] as CarType[],
+    cars: [],
   } as CarsState,
   reducers: {
     changeSearchTerm(state, action: PayloadAction<string>) {
@@ -29,10 +29,11 @@ const carsSlice = createSlice({
       });
     },
     removeCar(state, action: PayloadAction<number>) {
-      state.cars.filter((car) => car.id !== action.payload);
+      state.cars = state.cars.filter((car) => car.id !== action.payload);
     },
   },
 });
 
+export type { CarType, CarsState };
 export const { changeSearchTerm, addCar, removeCar } = carsSlice.actions;
 export const carsReducer = carsSlice.reducer;
