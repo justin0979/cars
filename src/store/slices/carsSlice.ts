@@ -8,28 +8,28 @@ interface CarType {
 
 interface CarsState {
   searchTerm: string;
-  cars: CarType[];
+  data: CarType[];
 }
 
 const carsSlice = createSlice({
   name: "car",
   initialState: {
     searchTerm: "",
-    cars: [],
+    data: [],
   } as CarsState,
   reducers: {
     changeSearchTerm(state, action: PayloadAction<string>) {
       state.searchTerm = action.payload;
     },
     addCar(state, action: PayloadAction<CarType>) {
-      state.cars.push({
+      state.data.push({
         name: action.payload.name,
         cost: action.payload.cost,
         id: nanoid(),
       });
     },
     removeCar(state, action: PayloadAction<string>) {
-      state.cars = state.cars.filter((car) => car.id !== action.payload);
+      state.data = state.data.filter((car) => car.id !== action.payload);
     },
   },
 });
