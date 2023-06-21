@@ -21,8 +21,8 @@ function CarForm() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    
-    dispatch(addCar({ name, cost }))
+
+    dispatch(addCar({ name, cost }));
   };
 
   return (
@@ -48,10 +48,6 @@ function CarForm() {
             value={cost || ""}
             onChange={handleCostChange}
           />
-        </div>
-        <div>
-          <label>Car Value</label>
-          <input type="text" />
         </div>
         <div className="field">
           <button className="button is-link">Submit</button>
