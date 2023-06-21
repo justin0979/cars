@@ -2,7 +2,7 @@ import { createSlice, PayloadAction, nanoid } from "@reduxjs/toolkit";
 
 interface CarType {
   name: string;
-  id: number;
+  id?: string;
   cost: number;
 }
 
@@ -25,10 +25,10 @@ const carsSlice = createSlice({
       state.cars.push({
         name: action.payload.name,
         cost: action.payload.cost,
-        id: parseInt(nanoid()),
+        id: nanoid(),
       });
     },
-    removeCar(state, action: PayloadAction<number>) {
+    removeCar(state, action: PayloadAction<string>) {
       state.cars = state.cars.filter((car) => car.id !== action.payload);
     },
   },
