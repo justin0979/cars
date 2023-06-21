@@ -25,6 +25,8 @@ module.exports = {
     "no-descending-specificity": null,
     "no-empty-source": null,
     "no-invalid-double-slash-comments": null,
+    "rule-empty-line-before": null,
+    "length-zero-no-unit": null,
     "value-keyword-case": null,
     "scss/at-mixin-argumentless-call-parentheses": null,
     "scss/at-rule-no-unknown": null,
