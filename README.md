@@ -25,8 +25,7 @@ What will derived state (values calculated using existing state) be?
 -   totalCost: number
 -   matchedCars: unknown
 
-**Note:** A good place for derived state is inside of the `useSelector` hooks.
-{: .note}
+> **_Note:_** A good place for derived state is inside of the `useSelector` hooks.
 
 ### Step 2: ID how state changes over time
 
